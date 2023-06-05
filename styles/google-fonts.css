@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/css2?family=David+Libre&family=Mate&family=Mate+SC&family=Spline+Sans+Mono&display=swap);
 
-.o-font-head, h3{
+.o-font-head, h3, h5{
     font-family: 'Mate SC', serif;
 }
 .o-font-plain{
