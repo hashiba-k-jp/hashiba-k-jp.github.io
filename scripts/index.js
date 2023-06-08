@@ -1,5 +1,3 @@
-
-
 function changeName(){
     target = document.querySelector("#name");
     if(target.classList.contains("name-url")){
@@ -12,7 +10,3 @@ function changeName(){
         target.innerHTML = "<span class=\"lead o-font-head\">hashiba-k-jp.github.io</span>";
     }
 }
-
-/*
-
-*/
