@@ -19,6 +19,7 @@ nav {
 .nav-border{
     height: 3px;
     width: 100%;
+    /* https://webgradients.com */
     background: linear-gradient(45deg, #fa709a, #fee140, #fa709a);
     animation: bggradient 5s ease infinite;
     background-size: 200% 200%;
