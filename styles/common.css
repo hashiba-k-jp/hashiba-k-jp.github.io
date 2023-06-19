@@ -12,8 +12,13 @@
 
 
 nav {
+    border-bottom: 3px solid;
+    border-color: red;
+    border-image-source: linear-gradient(45deg, #fa709a, #FF9300, #fee140);
     border-image-slice: 1;
+
     animation: bggradient 20s ease infinite;
+    /* Why does not this work? */
 }
 
 .nav-border{
