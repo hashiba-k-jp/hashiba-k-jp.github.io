@@ -1,3 +1,19 @@
+@import url(//fonts.googleapis.com/css2?family=David+Libre&family=Mate&family=Mate+SC&family=Spline+Sans+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=David+Libre&family=Mate&family=Mate+SC&family=Spline+Sans+Mono&display=swap);
+
+.o-font-head, h3, h5{
+    font-family: 'Mate SC', serif;
+}
+.o-font-plain{
+    font-family: 'David Libre', serif;
+}
+.o-font-mono{
+    font-family: 'Spline Sans Mono', monospace;
+}
+ul{
+    padding-left: 0.5em;
+}
+
 @keyframes bggradient{
   0% {
     background-position: 0% 50%;
