@@ -4,6 +4,10 @@
 .o-font-head, h3, h5{
     font-family: 'Mate SC', serif;
 }
+
+h3 {
+    color:#eeeeee;
+}
 .o-font-plain{
     font-family: 'David Libre', serif;
 }
@@ -26,11 +30,23 @@ ul{
   }
 }
 
+body {
+    background-image:
+      radial-gradient(at 0%   0%,   #051637, transparent),
+      radial-gradient(at 100% 0%,   #1C2C52, transparent),
+      radial-gradient(at 100% 100%, #5C658B, transparent);
+    background-attachment: fixed;
+    color: #EEEEEE;
+}
+
+a {
+  color: #EEEEEE;
+}
 
 nav {
     border-bottom: 3px solid;
-    border-color: red;
-    border-image-source: linear-gradient(45deg, #fa709a, #FF9300, #fee140);
+    border-color: #ffffff;
+    border-image-source: #ffffff;
     border-image-slice: 1;
 
     animation: bggradient 20s ease infinite;
@@ -41,7 +57,6 @@ nav {
     height: 3px;
     width: 100%;
     /* https://webgradients.com */
-    background: linear-gradient(45deg, #fa709a, #fee140, #fa709a);
     animation: bggradient 5s ease infinite;
     background-size: 200% 200%;
 }
