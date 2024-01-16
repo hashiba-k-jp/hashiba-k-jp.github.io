@@ -28,49 +28,79 @@
                 text-decoration: none;
             }
 
-
-            #res_colors{
-                background-color: #F0F0F0;
-                height: 2em;
-            }
-
-            #jp01, #jp04{
+            .flag {
                 padding: 0px;
-                margin: 0.25em 0;
-                height: 1.5em;
+                margin: 0.15em 0.1em;
+                height: 1.2em;
+                width: 12em;
             }
-            #jp01-1, #jp01-5{
-                width: 35%;
-                height: 100%;
+            #jp01-b{
+                width: 26%;
                 background-color: #373B66;
             }
-            #jp01-2, #jp01-4{
-                width: 5%;
-                height: 100%;
+            #jp01-w{
+                width: 3.2%;
                 background-color: #FFFFFF;
             }
-            #jp01-3{
-                width: 20%;
-                height: 100%;
+            #jp01-r{
+                width: 3.2%;
                 background-color: #C3373F;
             }
 
-            #jp04-1, #jp04-5{
-                width: 42.5%;
-                height: 100%;
-                background-color: #02594A;
+            #city01202-b{
+                width: 15%;
+                background-color: #154D7B;
             }
-            #jp04-2, #jp04-4{
+            #city01202-w{
                 width: 5%;
-                height: 100%;
                 background-color: #FFFFFF;
             }
-            #jp04-3{
-                width: 5%;
-                height: 100%;
-                background-color: #02594A;
+            #city01202-r{
+                width: 4%;
+                background-color: #881F4E;
+            }
+            #city01202-b-c{ /* center */
+                width: 4%;
+                background-color: #154D7B;
+            }
+            #city01202-w-c{ /* center */
+                width: 2%;
+                background-color: #FFFFFF;
+            }
+            #city01202-r-c{ /* center */
+                width: 8%;
+                background-color: #881F4E;
             }
 
+            #jp04-g-s{ /* side */
+                width: 26.5%;
+                background-color: #02594A;
+            }
+            #jp04-g-c{ /* center */
+                width: 5%;
+                background-color: #02594A;
+            }
+            #jp04-w{
+                width: 8%;
+                background-color: #FFFFFF;
+            }
+
+            #city04100-b-s{ /* side */
+                width: 26%;
+                background-color: #2E0A70;
+            }
+            #city04100-b-ms{ /* middle-side */
+                width: 12%;
+                background-color: #2E0A70;
+            }
+            #city04100-b-c{ /* center */
+                width: 2%;
+                background-color: #2E0A70;
+            }
+            #city04100-w{
+                width: 4%;
+                background-color: #FFFFFF;
+            }
 
         </style>
 
@@ -144,27 +174,80 @@
                 </div>
             </div> -->
             <div class="container">
-                <div class="row flex-row-reverse" id="res_colors">
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-end">
-                        <div class="container d-inline-flex" id=jp01>
-                            <div class="p-2" id="jp01-1"></div>
-                            <div class="p-2" id="jp01-2"></div>
-                            <div class="p-2" id="jp01-3"></div>
-                            <div class="p-2" id="jp01-4"></div>
-                            <div class="p-2" id="jp01-5"></div>
+                <div class="row flex-row-reverse bg-light">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-sm-0">
+                        <div class="area row justify-content-center">
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="jp01-b"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-b"></div>
+                            </div>
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="city01202-b"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r-c"></div>
+                                <div class="flag-element" id="city01202-w-c"></div>
+                                <div class="flag-element" id="city01202-b-c"></div>
+                                <div class="flag-element" id="city01202-w-c"></div>
+                                <div class="flag-element" id="city01202-r-c"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-b"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-end">
-                        <div class="container d-inline-flex" id=jp04>
-                            <div class="p-2" id="jp04-1"></div>
-                            <div class="p-2" id="jp04-2"></div>
-                            <div class="p-2" id="jp04-3"></div>
-                            <div class="p-2" id="jp04-4"></div>
-                            <div class="p-2" id="jp04-5"></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-1 mt-sm-0">
+                        <div class="area row justify-content-center">
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="jp04-g-s"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-c"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-c"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-c"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-s"></div>
+                            </div>
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="city04100-b-s"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-ms"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-c"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-c"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-ms"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-s"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </body>
+
 </html>
