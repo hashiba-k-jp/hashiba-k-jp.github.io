@@ -27,6 +27,51 @@
                 color: white;
                 text-decoration: none;
             }
+
+
+            #res_colors{
+                background-color: #F0F0F0;
+                height: 2em;
+            }
+
+            #jp01, #jp04{
+                padding: 0px;
+                margin: 0.25em 0;
+                height: 1.5em;
+            }
+            #jp01-1, #jp01-5{
+                width: 35%;
+                height: 100%;
+                background-color: #373B66;
+            }
+            #jp01-2, #jp01-4{
+                width: 5%;
+                height: 100%;
+                background-color: #FFFFFF;
+            }
+            #jp01-3{
+                width: 20%;
+                height: 100%;
+                background-color: #C3373F;
+            }
+
+            #jp04-1, #jp04-5{
+                width: 42.5%;
+                height: 100%;
+                background-color: #02594A;
+            }
+            #jp04-2, #jp04-4{
+                width: 5%;
+                height: 100%;
+                background-color: #FFFFFF;
+            }
+            #jp04-3{
+                width: 5%;
+                height: 100%;
+                background-color: #02594A;
+            }
+
+
         </style>
 
         <link rel="stylesheet" href="./styles/common.css" type="text/css">
@@ -86,14 +131,37 @@
                     <li>2022.11.19 <a href="https://www.sendai-ctf.org/" target="_blank" rel="noopener noreferrer" class="link-secondary">Sendai CTF 2022</a></li>
                     <li>2023.03.15 <a href="https://play.picoctf.org/events/72" target="_blank" rel="noopener noreferrer" class="link-secondary">picoCTF 2023</a> <a href="results/picoctf2023.html" class="badge bg-secondary"><i class="bi bi-link-45deg"></i> Detail</a></li>
                     <li>2023.06.03 <a href="https://www.seccon.jp/2023/" target="_blank" rel="noopener noreferrer" class="link-secondary">SECCON Beginners 2023</a> <a href="results/ctf4b2023.html" class="badge bg-secondary"><i class="bi bi-link-45deg"></i> Detail</a></li>
+                    <li>2023.11.18 <a href="https://www.sendai-ctf.org/library/ctf2023lp/" target="_blank" rel="noopener noreferrer" class="link-secondary">Sendai CTF 2023</a> <span class="badge rounded-pill bg-warning"><i class="bi bi-award"></i> Winner</span></li>
                 </ul>
             </div>
             <hr class="hr hr-blurry m-0" />
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col float-end">
                         <a href="misc/hokkaido.html"><img src="images/hokkaido.png" class="img-fluid float-end" width="25" alt="Hokkaido"></a>
-                        <!-- https://japan-map.com/wp-content/uploads/hokkaido.png -->
+                        -- https://japan-map.com/wp-content/uploads/hokkaido.png --
+                    </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="row flex-row-reverse" id="res_colors">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-end">
+                        <div class="container d-inline-flex" id=jp01>
+                            <div class="p-2" id="jp01-1"></div>
+                            <div class="p-2" id="jp01-2"></div>
+                            <div class="p-2" id="jp01-3"></div>
+                            <div class="p-2" id="jp01-4"></div>
+                            <div class="p-2" id="jp01-5"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 float-end">
+                        <div class="container d-inline-flex" id=jp04>
+                            <div class="p-2" id="jp04-1"></div>
+                            <div class="p-2" id="jp04-2"></div>
+                            <div class="p-2" id="jp04-3"></div>
+                            <div class="p-2" id="jp04-4"></div>
+                            <div class="p-2" id="jp04-5"></div>
+                        </div>
                     </div>
                 </div>
             </div>
