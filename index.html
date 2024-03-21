@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ke-</title>
+
+        <!-- bootstrap 5.0 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+        <!-- bootstrap and original styles; Should this be written other files? -->
+        <style media="screen">
+            /* Show it is fixed to the top */
+            body {
+                min-height: 75rem;
+                padding-top: 4.5rem;
+            }
+            li{
+                list-style:none;
+            }
+            a{
+                text-decoration:none;
+            }
+            .badge, .badge:visited, .badge:hover{
+                color: white;
+                text-decoration: none;
+            }
+
+            .flag {
+                padding: 0px;
+                margin: 0.15em 0.1em;
+                height: 1.2em;
+                width: 12em;
+            }
+            #jp01-b{
+                width: 26%;
+                background-color: #373B66;
+            }
+            #jp01-w{
+                width: 3.2%;
+                background-color: #FFFFFF;
+            }
+            #jp01-r{
+                width: 3.2%;
+                background-color: #C3373F;
+            }
+
+            #city01202-b{
+                width: 15%;
+                background-color: #154D7B;
+            }
+            #city01202-w{
+                width: 5%;
+                background-color: #FFFFFF;
+            }
+            #city01202-r{
+                width: 4%;
+                background-color: #881F4E;
+            }
+            #city01202-b-c{ /* center */
+                width: 4%;
+                background-color: #154D7B;
+            }
+            #city01202-w-c{ /* center */
+                width: 2%;
+                background-color: #FFFFFF;
+            }
+            #city01202-r-c{ /* center */
+                width: 8%;
+                background-color: #881F4E;
+            }
+
+            #jp04-g-s{ /* side */
+                width: 26.5%;
+                background-color: #02594A;
+            }
+            #jp04-g-c{ /* center */
+                width: 5%;
+                background-color: #02594A;
+            }
+            #jp04-w{
+                width: 8%;
+                background-color: #FFFFFF;
+            }
+
+            #city04100-b-s{ /* side */
+                width: 26%;
+                background-color: #2E0A70;
+            }
+            #city04100-b-ms{ /* middle-side */
+                width: 12%;
+                background-color: #2E0A70;
+            }
+            #city04100-b-c{ /* center */
+                width: 2%;
+                background-color: #2E0A70;
+            }
+            #city04100-w{
+                width: 4%;
+                background-color: #FFFFFF;
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="./styles/common.css" type="text/css">
+        <!-- <link rel="stylesheet" href="./styles/index.css" type="text/css"> -->
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/common.js"></script>
+
+        <!-- flag{U_ar3_lo0k1ng_4t_th1s_html_f1l3} -->
+
+    </head>
+    <body class="o-font-plain">
+        <script>nav("HOME")</script>
+
+        <!--
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0">
+            <div class="container-md">
+                <a class="navbar-brand p-2 m-0 d-flex align-items-center"><img src="./images/icons/icon.jpg" class="border border-light border-1 rounded-circle d-inline-block align-text-top" height="36" alt=""> </a>
+                <a class="navbar-brand o-font-head p-0">HOME</a>
+            </div>
+        </nav>
+        -->
+
+        <main class="container d-grid gap-3">
+            <div class="container">
+                <h3 class="o-font-head">I am</h3>
+                <div class=" row d-flex align-items-center">
+                    <img src="./images/icons/icon.jpg" class="m-2 col-2 w-auto border border-light border-0 rounded-circle" height="64" width="64" alt="">
+                    <div class="col-8 align-center name-url my-2" id="name" onclick="changeName()">
+                        <span class="lead o-font-head">hashiba-k-jp.github.io</span>
+                    </div>
+                </div>
+                <div class="p-2 pb-0">
+                    <p class="mb-0">
+                        An undergraduate university student (B4), and majoring in information science.<br>
+                    </p>
+                    <p class="mb-0 mt-1">
+                        <i class="bi bi-geo-alt"></i> Sendai City, Japan.
+                    </p>
+                </div>
+            </div>
+            <hr class="hr hr-blurry m-0" />
+            <div class="container">
+                <h3 class="o-font-head">Links</h3>
+                <ul class="mb-0">
+                    <li><a href="https://twitter.com/hashibakcompeng/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-twitter"></i> <small class="text-muted">@hashibakcompeng</small></a></li>
+                    <li><a href="https://github.com/hashiba-k-jp" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-github"></i> <small class="text-muted">hashiba-k-jp</small></a></li>
+                    <li><a href="https://Qiita.com/kekeke-udon" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i> <small class="text-muted">Qiita kekeke-udon</small></a></li>
+                    <!-- You found this link, but there may be nothing that interests you... -->
+                    <!-- <li><a href="https://www.instagram.com/k_instgr/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-instagram"></i> <small class="text-muted">ke-instgr</small></a></li> -->
+                </ul>
+            </div>
+            <hr class="hr hr-blurry m-0" />
+            <div class="container">
+                <h3 class="o-font-head">Results</h3>
+                <ul class="mb-0">
+                    <li>2021.12.18 <a href="https://hacku.yahoo.co.jp/kosen2021/" target="_blank" rel="noopener noreferrer" class="link-secondary">Hack U KOSEN 2021</a> <a href="results/hackukosen2021.html" class="badge bg-secondary"><i class="bi bi-link-45deg"></i> Detail</a></li>
+                    <li>2022.11.19 <a href="https://www.sendai-ctf.org/" target="_blank" rel="noopener noreferrer" class="link-secondary">Sendai CTF 2022</a></li>
+                    <li>2023.03.15 <a href="https://play.picoctf.org/events/72" target="_blank" rel="noopener noreferrer" class="link-secondary">picoCTF 2023</a> <a href="results/picoctf2023.html" class="badge bg-secondary"><i class="bi bi-link-45deg"></i> Detail</a></li>
+                    <li>2023.06.03 <a href="https://www.seccon.jp/2023/" target="_blank" rel="noopener noreferrer" class="link-secondary">SECCON Beginners 2023</a> <a href="results/ctf4b2023.html" class="badge bg-secondary"><i class="bi bi-link-45deg"></i> Detail</a></li>
+                    <li>2023.11.18 <a href="https://www.sendai-ctf.org/library/ctf2023lp/" target="_blank" rel="noopener noreferrer" class="link-secondary">Sendai CTF 2023</a> <span class="badge rounded-pill bg-warning"><i class="bi bi-award"></i> Winner</span></li>
+                </ul>
+            </div>
+            <hr class="hr hr-blurry m-0" />
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col float-end">
+                        <a href="misc/hokkaido.html"><img src="images/hokkaido.png" class="img-fluid float-end" width="25" alt="Hokkaido"></a>
+                        -- https://japan-map.com/wp-content/uploads/hokkaido.png --
+                    </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="row flex-row-reverse bg-light">
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-sm-0">
+                        <div class="area row justify-content-center">
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="jp01-b"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-r"></div>
+                                <div class="flag-element" id="jp01-w"></div>
+                                <div class="flag-element" id="jp01-b"></div>
+                            </div>
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="city01202-b"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r-c"></div>
+                                <div class="flag-element" id="city01202-w-c"></div>
+                                <div class="flag-element" id="city01202-b-c"></div>
+                                <div class="flag-element" id="city01202-w-c"></div>
+                                <div class="flag-element" id="city01202-r-c"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-r"></div>
+                                <div class="flag-element" id="city01202-w"></div>
+                                <div class="flag-element" id="city01202-b"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 mt-1 mt-sm-0">
+                        <div class="area row justify-content-center">
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="jp04-g-s"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-c"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-c"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-c"></div>
+                                <div class="flag-element" id="jp04-w"></div>
+                                <div class="flag-element" id="jp04-g-s"></div>
+                            </div>
+                            <div class="d-flex flag">
+                                <div class="flag-element" id="city04100-b-s"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-ms"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-c"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-c"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-ms"></div>
+                                <div class="flag-element" id="city04100-w"></div>
+                                <div class="flag-element" id="city04100-b-s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+@import url(//fonts.googleapis.com/css2?family=David+Libre&family=Mate&family=Mate+SC&family=Spline+Sans+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=David+Libre&family=Mate&family=Mate+SC&family=Spline+Sans+Mono&display=swap);
+
+.o-font-head, h3, h5{
+    font-family: 'Mate SC', serif;
+}
+.o-font-plain{
+    font-family: 'David Libre', serif;
+}
+.o-font-mono{
+    font-family: 'Spline Sans Mono', monospace;
+}
+ul{
+    padding-left: 0.5em;
+}
+
+@keyframes bggradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+nav {
+    border-bottom: 3px solid;
+    border-color: red;
+    border-image-source: linear-gradient(45deg, #fa709a, #FF9300, #fee140);
+    border-image-slice: 1;
+
+    animation: bggradient 20s ease infinite;
+    /* Why does not this work? */
+}
+
+.nav-border{
+    height: 3px;
+    width: 100%;
+    /* https://webgradients.com */
+    background: linear-gradient(45deg, #fa709a, #fee140, #fa709a);
+    animation: bggradient 5s ease infinite;
+    background-size: 200% 200%;
+}
