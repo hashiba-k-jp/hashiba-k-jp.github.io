@@ -22,11 +22,12 @@
             }
 
             .name-div{
-                background-image: linear-gradient(45deg, #fac8d7, #ffeacc, #fff7cc);
+                background-image: linear-gradient(45deg, #fee140ff, #FF930080, #fa709a20);
+                border-image-source: linear-gradient(45deg, #fee140, #FF9300, #fa709a);
+
             }
 
             .date{
-                /* background-image: linear-gradient(45deg, #fac8d7, #ffeacc, #fff7cc); */
                 background-color: #EFEFEF;
                 border-left: .3em solid #FF9300;
             }
@@ -52,12 +53,11 @@
         <!-- <link rel="stylesheet" href="./styles/index.css" type="text/css"> -->
         <script type="text/javascript" src="scripts/index.js"></script>
         <script type="text/javascript" src="scripts/common.js"></script>
-
         <!-- flag{h3l10_w0r1d!} -->
 
     </head>
     <body class="o-font-plain">
-        <script>nav("HOME")</script>
+        <script>nav("")</script>
 
         <!--
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0">
@@ -69,6 +69,7 @@
         -->
 
         <main class="container d-grid gap-3">
+            <!-- <div id="curr_lang" class="lang-en" style="display: none;"></div> -->
             <div class="container">
                 <h3 class="o-font-head"></h3>
                 <div class="name-div row d-flex align-items-center">
@@ -80,7 +81,9 @@
                         <span class="lead o-font-head">Hashiba Keishi</span>
                     </div>
                 </div>
-                <div class="p-2 pb-0">
+              </div>
+            <div class="container div-text">
+                <div class="p-2 pb-0 lang-en">
                     <p class="mb-0">
                         I am a graduate university student (1st year of master's cource), and majoring in information science.<br>
                     </p>
@@ -88,9 +91,17 @@
                         <i class="bi bi-geo-alt"></i>Osaka Univ., Suita City, Japan.
                     </p>
                 </div>
+                <div class="p-2 pb-0 lang-ja">
+                    <p class="mb-0">
+                        大学院生
+                    </p>
+                    <p class="mb-0 mt-1">
+                        <i class="bi bi-geo-alt"></i>大阪府吹田市 / 大阪大学
+                    </p>
+                </div>
             </div>
             <hr class="hr  m-0" />
-            <div class="container">
+            <div class="container div-text">
                 <h3 class="o-font-head"></h3>
                 <ul class="mb-0">
                     <li><a href="https://twitter.com/hashibakcompeng/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-twitter"></i> <small class="text-muted">@hashibakcompeng</small></a></li>
@@ -108,10 +119,16 @@
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1" style="border-color: #2C95B5;">
                             2022.03.18
                         </div>
-                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9">
+                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9 lang-en">
                             <p class="contents-title">Associates Degree of Engineering</p>
                             Department of Production Systems Engineering<a href="https://www.hakodate-ct.ac.jp/subject/infotech/" target="_blank" rel="noopener noreferrer" class="link-secondary overflow-x-auto"><i class="bi bi-link-45deg"></i></a>
                             National Institute of Technology, Hakodate College<a href="https://www.hakodate-ct.ac.jp/" target="_blank" rel="noopener noreferrer overflow-x-auto" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9 lang-ja">
+                            <p class="contents-title">準学士（工学）</p>
+                            函館工業高等専門学校<a href="https://www.hakodate-ct.ac.jp/" target="_blank" rel="noopener noreferrer overflow-x-auto" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
+                            生産システム工学科<a href="https://www.hakodate-ct.ac.jp/subject/infotech/" target="_blank" rel="noopener noreferrer" class="link-secondary overflow-x-auto"><i class="bi bi-link-45deg"></i></a>
+                            情報コース
                         </div>
                     </div>
                     <div class="row mt-1">
@@ -120,18 +137,26 @@
                         </div>
                         <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9">
                             <p class="contents-title">PPL 2024<a href="https://jssst-ppl.org/workshop/2024/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a></p>
-                            @ Niigata City, Japan
+                            <i class="bi bi-geo-alt"></i> <span class="lang-en">Niigata City, Japan</span> <span class="lang-ja">新潟市</span>
                         </div>
                     </div>
                     <div class="row mt-1">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1" style="border-color: #3E1485;">
                             2024.03.26
                         </div>
-                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9">
+                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9 lang-en">
                             <p class="contents-title">Bachelor of Engineering</p>
+                            Computer Science Course <a href="https://www.ecei.tohoku.ac.jp/eipe/course/computer_science/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
                             Department of Electrical, Information and Physics Engineering<a href="https://www.ecei.tohoku.ac.jp/eipe/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
                             School of Engineering<a href="https://www.eng.tohoku.ac.jp/english/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
                             Tohoku University<a href="https://www.tohoku.ac.jp/en/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9 lang-ja">
+                            <p class="contents-title">学士（工学）</p>
+                            東北大学<a href="https://www.tohoku.ac.jp/en/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
+                            工学部<a href="https://www.eng.tohoku.ac.jp/english/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
+                            電気情報物理工学科<a href="https://www.ecei.tohoku.ac.jp/eipe/" target="_blank" rel="noopener noreferrer" class="link-secondary"><i class="bi bi-link-45deg"></i></a>
+                            情報工学コース
                         </div>
                     </div>
                 </div>
@@ -316,6 +341,19 @@
                     </div>
                 </div>
             </div>
+
+            <!-- <div class="footer-image">
+              <img src="images/pink.png"   id="pink1"  alt="" width="800" height="800">
+              <img src="images/pink.png"   id="pink2"  alt="" width="800" height="800">
+              <img src="images/yellow.png" id="yellow" alt="" width="800" height="800">
+              <img src="images/orange.png" id="orange" alt="" width="800" height="800">
+              <img src="images/white.png"  id="white"  alt="" width="800" height="800">
+            </div> -->
+
+            <script type="text/javascript">
+                const toHide = document.querySelectorAll(".lang-ja");
+                toHide.forEach((element) => element.style.display = "none");
+            </script>
         </main>
     </body>
 

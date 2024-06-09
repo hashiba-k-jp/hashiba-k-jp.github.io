@@ -5,6 +5,10 @@
 /* @import url(fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,90,100..900;1,90,100..900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,90,100..900;1,90,100..900&display=swap); */
 
+/* for japanese */
+@import url(//fonts.googleapis.com/css2?family=Klee+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Klee+One&display=swap);
+
 .o-font-head, h3, h5{
     font-family: 'EB Garamond';
 }
@@ -14,6 +18,11 @@
 .o-font-mono{
     font-family: 'EB Garamond';
 }
+
+.lang-ja{
+    font-family: "Klee One", cursive;
+}
+
 ul{
     padding-left: 0.5em;
 }
@@ -30,22 +39,56 @@ ul{
   }
 }
 
+@keyframes pos_rotate {
+  0% { transform: rotate(60deg); }
+  100% { transform: rotate(420deg); }
+}
+@keyframes neg_rotate {
+  0% { transform: rotate(-60deg); }
+  100% { transform: rotate(-420deg); }
+}
+
+.div-text{
+  /* background-color: #FFFFFFB0; */
+}
+
+.footer-image > img{
+  position: fixed;
+  top:      -300px;
+  right:    -250px;
+  z-index:  -1;
+}
+
+.footer-image > #white{
+  opacity:  0.65;
+}
+
+.footer-image > #orange{
+  animation: pos_rotate 80s linear infinite;
+}
+.footer-image > #yellow{
+  animation: neg_rotate 80s linear infinite;
+}
+.footer-image > #pink1{
+  animation: pos_rotate 30s linear infinite;
+}
+.footer-image > #pink2{
+  animation: neg_rotate 30s linear infinite;
+}
+
+
 
 nav {
     border-bottom: 3px solid;
-    border-color: red;
-    border-image-source: linear-gradient(45deg, #fa709a, #FF9300, #fee140);
+    border-image-source: linear-gradient(45deg, #fee140, #FF9300, #fa709a);
     border-image-slice: 1;
-
-    animation: bggradient 20s ease infinite;
-    /* Why does not this work? */
 }
 
-.nav-border{
+/* .nav-border{
     height: 3px;
     width: 100%;
-    /* https://webgradients.com */
+    // https://webgradients.com
     background: linear-gradient(45deg, #fa709a, #fee140, #fa709a);
     animation: bggradient 5s ease infinite;
     background-size: 200% 200%;
-}
+} */
