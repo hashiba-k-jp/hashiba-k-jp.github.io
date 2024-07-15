@@ -29,7 +29,8 @@
 
             .date{
                 background-color: #EFEFEF;
-                border-left: .3em solid #FF9300;
+                border-left: .3em solid var(--color);
+                padding-bottom: 1px;
             }
 
             .badge, .badge:visited, .badge:hover{
@@ -44,6 +45,36 @@
 
             #flags{
                 margin: 0 0 1em 0;
+            }
+
+            .border-blue{
+              --color:#2C95B5;
+            }
+
+            .border-purple{
+              --color:#3E1485;
+            }
+
+            .border-orange{
+              --color:#FF9300;
+            }
+
+            .description-row{
+              background-color: #F9F9F9;
+            }
+
+            .main-contents > a{
+              text-decoration: underline;
+            }
+
+
+            @media (min-width: 576px) {
+              .container-content > .row {
+                &:not(.description-row) {
+                  /* border-bottom: solid 1px;
+                  border-image: linear-gradient(to right, var(--color), #FFFFFF) 1; */
+                }
+              }
             }
 
         </style>
@@ -115,9 +146,9 @@
             <hr class="hr  m-0" />
             <div class="container">
                 <h3 class="o-font-head"></h3>
-                <div class="container">
-                    <div class="row mt-1">
-                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1" style="border-color: #2C95B5;">
+                <div class="container container-content">
+                    <div class="row mt-1 border-blue">
+                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2022.03.18
                         </div>
                         <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9 lang-en">
@@ -132,8 +163,8 @@
                             情報コース
                         </div>
                     </div>
-                    <div class="row mt-1">
-                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1" style="border-color: #3E1485;">
+                    <div class="row mt-1 border-purple">
+                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2024.03.05
                         </div>
                         <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9">
@@ -141,8 +172,8 @@
                             <i class="bi bi-geo-alt"></i> <span class="lang-en">Niigata City, Japan</span> <span class="lang-ja">新潟市</span>
                         </div>
                     </div>
-                    <div class="row mt-1">
-                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1" style="border-color: #3E1485;">
+                    <div class="row mt-1 border-purple">
+                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2024.03.26
                         </div>
                         <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9 lang-en">
@@ -165,8 +196,8 @@
             <hr class="hr  m-0" />
             <div class="container">
                 <h3 class="o-font-head"></h3>
-                <div class="container">
-                    <div class="row mt-1">
+                <div class="container container-content">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2021.12.18
                         </div>
@@ -177,7 +208,7 @@
                             <a href="results/hackukosen2021.html" class="badge text-bg-light"><i class="bi bi-chevron-right"></i> My Detail</a>
                         </div>
                     </div>
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2022.11.19
                         </div>
@@ -187,7 +218,7 @@
                             <a href="https://www.sendai-ctf.org/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
                         </div>
                     </div>
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2023.03.15
                         </div>
@@ -195,10 +226,10 @@
                             <span class="contents-title">picoCTF 2023</span>
                             <br class="d-md-none">
                             <a href="https://play.picoctf.org/events/72" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
-                            <a href="results/picoctf2023.html" class="badge text-bg-dark"><i class="bi bi-chevron-right"></i>1118th / 6923teams</a>
+                            <a href="results/picoctf2023.html" class="badge text-success-emphasis bg-success-subtle">1118th / 6923 teams</a>
                         </div>
                     </div>
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2023.06.03
                         </div>
@@ -206,10 +237,11 @@
                             <span class="contents-title">SECCON Beginners 2023</span>
                             <br class="d-md-none">
                             <a href="https://www.seccon.jp/2023/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
-                            <a href="results/ctf4b2023.html" class="badge text-bg-light"><i class="bi bi-chevron-right"></i> My Result</a>
+                            <a href="results/ctf4b2023.html" class="badge text-success-emphasis bg-success-subtle">191st / 778 teams</a>
+                            <span class="badge text-primary-emphasis bg-info-subtle"><i class="bi bi-people"></i> Sendai-A0b@yama</span>
                         </div>
                     </div>
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2023.11.18
                         </div>
@@ -217,10 +249,22 @@
                             <span class="contents-title">Sendai CTF 2023</span>
                             <br class="d-md-none">
                             <a href="https://www.sendai-ctf.org/library/ctf2023lp/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
-                            <a href="https://x.com/hashibakcompeng/status/1725820155543134664" class="badge text-bg-warning"><i class="bi bi-chevron-right"></i><i class="bi bi-award"></i> 1st</a>
+                            <a href="https://x.com/hashibakcompeng/status/1725820155543134664" class="badge text-warning-emphasis bg-warning-subtle"><i class="bi bi-award"></i> 1st / 31 participants</a>
                         </div>
                     </div>
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
+                        <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
+                            2023.12.16
+                        </div>
+                        <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9">
+                            <span class="contents-title">(Japan Gov't MIC) CTF (Beginners Course)</span>
+                            <br class="d-md-none">
+                            <a href="https://west-sec.com/vs/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
+                            <span class="badge text-success-emphasis bg-success-subtle">4th / ??? teams</span>
+                            <span class="badge text-primary-emphasis bg-info-subtle"><i class="bi bi-people"></i> Sendai-A0b@yama</span>
+                        </div>
+                    </div>
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2024.02.25
                         </div>
@@ -228,22 +272,18 @@
                             <span class="contents-title">(Japan Ministry of Defense) Cyber Contest 2024</span>
                             <br class="d-md-none">
                             <a href="https://www.mod.go.jp/j/approach/defense/cyber/c_contest/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
-                            <a href="results/mod2024.html" class="badge text-bg-light"><i class="bi bi-chevron-right"></i>My Result</a>
+                            <a href="results/mod2024.html" class="badge text-success-emphasis bg-success-subtle">72nd / 314 participants</a>
                         </div>
                     </div>
-                    <div class="row mt-1">
-                      <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1" style="border-color: #FFFFFF;">
-                                
-                      </div>
-                      <div class="main-contents text-sm-start col-xxl-11 col-xl-11 col-lg-10 col-md-10 col-sm-9 col-xs-9">
+
+                    <!-- <div class="row mt-1 description-row">
+                      <div class="main-contents text-sm-start col-12">
                           Since here, I participated to the CTF team <span class="fw-semibold">ONsen</span>.
-                          <br class="d-md-none">
                           <a href="https://ctftime.org/team/220382/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> CTF time</a>
                       </div>
+                    </div> -->
 
-                    </div>
-
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2024.06.15
                         </div>
@@ -251,10 +291,11 @@
                             <span class="contents-title">SECCON Beginners 2024</span>
                             <br class="d-md-none">
                             <a href="https://www.seccon.jp/13/seccon_beginners/content.html" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
-                            <span class="badge text-bg-dark">39th place / 962 teams</span>
+                            <span class="badge text-success-emphasis bg-success-subtle">39th place / 962 teams</span>
+                            <a href="https://ctftime.org/team/220382/" target="_blank" rel="noopener noreferrer" class="badge text-primary-emphasis bg-info-subtle"><i class="bi bi-people"></i> ONsen</a>
                         </div>
                     </div>
-                    <div class="row mt-1">
+                    <div class="row mt-1 border-orange">
                         <div class="date text-start text-md-center col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-3   px-xl-1">
                             2024.06.21
                         </div>
@@ -262,7 +303,8 @@
                             <span class="contents-title">Wani CTF 2024</span>
                             <br class="d-md-none">
                             <a href="https://wanictf.org/" target="_blank" rel="noopener noreferrer" class="badge text-bg-light"><i class="bi bi-link-45deg"></i> Official Site</a>
-                            <span class="badge text-bg-dark">28th place / 1022 teams</span>
+                            <span class="badge text-success-emphasis bg-success-subtle">28th place / 1022 teams</span>
+                            <a href="https://ctftime.org/team/220382/" target="_blank" rel="noopener noreferrer" class="badge text-primary-emphasis bg-info-subtle"><i class="bi bi-people"></i> ONsen</a>
                         </div>
                     </div>
                 </div>
