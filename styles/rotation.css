@@ -1,6 +1,7 @@
 .footer-image {
   --rad-outer:  calc(430px + 200px);
-  --debug-padding: 1200px;
+  /* --debug-padding: 1200px; */
+  --debug-padding: 0px;
   --debug-rotate: 0deg;
   /* --origin-deg: 45deg; */
 
@@ -253,8 +254,8 @@
 
 
 .footer-image > #white{
-  opacity:  0;
-  /* opacity:  0.875; */
+  /* opacity:  0; */
+  opacity:  0.875;
 }
 
 .footer-image > #l0_orange, #l0_orange_white{
