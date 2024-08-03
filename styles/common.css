@@ -9,6 +9,9 @@
 @import url(//fonts.googleapis.com/css2?family=Klee+One&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Klee+One&display=swap);
 
+@import url(//fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap);
+
 .o-font-head, h3, h5{
     font-family: 'EB Garamond';
 }
@@ -20,7 +23,8 @@
 }
 
 .lang-ja{
-    font-family: "Klee One", cursive;
+    /* font-family: "Klee One", cursive; */
+    font-family: "Shippori Mincho", serif;
 }
 
 ul{
