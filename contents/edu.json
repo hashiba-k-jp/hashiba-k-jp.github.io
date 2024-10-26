@@ -1,0 +1,47 @@
+[
+    {
+        "title":"Associates Degree of Engineering",
+        "date":{
+            "year":2022,
+            "month":3,
+            "day":18
+        },
+        "dept":[
+            "Department of Production Systems Engineering"
+        ],
+        "school": "National Institute of Technology, Hakodate College",
+        "color" : "#2C95B5"
+    },
+    {
+        "title":"Bachelor of Engineering",
+        "date":{
+            "year":2024,
+            "month":3,
+            "day":26
+        },
+        "dept":[
+            "Computer Science Course",
+            "Department of Electrical",
+            "Information and Physics Engineering",
+            "School of Engineering"
+        ],
+        "school": "Tohoku University",
+        "color" : "#3E1485"
+    },
+    {
+        "title":"A master's course student",
+        "date":{
+            "year":2026,
+            "month":0,
+            "day":0
+        },
+        "dept":[
+            "Information Security Engineering Laboratory",
+            "Department of Multimedia Engineering",
+            "Graduate School of Information Science and Technology"
+        ],
+        "school": "The University of Osaka",
+        "color" : "#2d287f",
+        "enrolled": true
+    }
+]

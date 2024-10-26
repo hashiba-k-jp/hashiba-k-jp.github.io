@@ -1,0 +1,206 @@
+[
+    {
+        "date"  : {
+            "year"  :2021,
+            "month" :12,
+            "day"   :18
+        },
+        "title" : "Hack U KOSEN 2021",
+        "link"  : "https://hacku.yahoo.co.jp/kosen2021",
+        "badges" : [
+            {
+                "theme"     : "github",
+                "name"      : "repository",
+                "link"      : "https://github.com/hashiba-k-jp/hakodate-a05"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "hakodate-a05",
+                "link"      : ""
+            },
+            {
+                "theme"     : "detail",
+                "name"      : "Detail",
+                "link"      : "results/hackukosen2021.html"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2022,
+            "month" :11,
+            "day"   :19
+        },
+        "title" : "Sendai CTF 2022",
+        "link"  : "https://www.sendai-ctf.org/library/ctf2022lp",
+        "badges" : [
+            {
+                "theme"     : "ex-link",
+                "name"      : "Write up",
+                "link"      : "",
+                "remarks"   : {
+                    "text"  : ["strikethrough"]
+                }
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2023,
+            "month" :3,
+            "day"   :15
+        },
+        "title"  : "picoCTF 2023",
+        "link"  : "https://play.picoctf.org/events/72",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "1118th / 6923 teams",
+                "link"      : "results/picoctf2023.html"
+            },
+            {
+                "theme"     : "ex-link",
+                "name"      : "Write up",
+                "link"      : "https://qiita.com/kekeke-udon/items/6f0763643e809690c6e6"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2023,
+            "month" :6,
+            "day"   :3
+        },
+        "title" : "SECCON Beginners 2023",
+        "link"  : "https://www.seccon.jp/2023",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "191st / 778 teams",
+                "link"      : "results/ctf4b2023.html"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "Sendai-A0b@yama",
+                "link"      : ""
+            },
+            {
+                "theme"     : "ex-link",
+                "name"      : "Write up",
+                "link"      : "https://qiita.com/kekeke-udon/items/105cec27083b1ca9dc19"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2023,
+            "month" :11,
+            "day"   :18
+        },
+        "title" : "Sendai CTF 2023",
+        "link"  : "https://www.sendai-ctf.org/library/ctf2023lp",
+        "badges" : [
+            {
+                "theme"     : "award",
+                "name"      : "1st / 31 participants",
+                "link"      : "https://x.com/hashibakcompeng/status/1725820155543134664"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2023,
+            "month" :12,
+            "day"   :16
+        },
+        "title" : "(Japan Gov't MIC) CTF (Beginners Course)",
+        "link"  : "https://west-sec.com/vs",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "4th / 76 teams"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "Sendai-A0b@yama"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :2,
+            "day"   :25
+        },
+        "title" : "(Japan Gov't MOD) Cyber Contest 2024",
+        "link"  : "https://www.mod.go.jp/j/approach/defense/cyber/c_contest",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "72nd / 314 participants",
+                "link"      : "results/mod2024.html"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :6,
+            "day"   :15
+        },
+        "title" : "SECCON Beginners 2024",
+        "link"  : "https://www.seccon.jp/13/seccon_beginners/content.html",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "39th / 962 teams"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "ONsen",
+                "link"      : "https://ctftime.org/team/220382"
+            },
+            {
+                "theme"     : "ex-link",
+                "name"      : "Write up",
+                "link"      : "https://qiita.com/kekeke-udon/items/5600ab50dceb2966c3c7"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :6,
+            "day"   :21
+        },
+        "title" : "Wani CTF 2024",
+        "link"  : "https://wanictf.org",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "28th / 1022 teams"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "ONsen",
+                "link"      : "https://ctftime.org/team/220382"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :10,
+            "day"   :23
+        },
+        "title" : "MWS Cup 2024 (in CSS 2024)",
+        "badges" : [
+            {
+                "theme"     : "team",
+                "name"      : "F.SE"
+            }
+        ]
+    }
+
+
+]
