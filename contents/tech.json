@@ -101,7 +101,7 @@
         "link"  : "https://www.sendai-ctf.org/library/ctf2023lp",
         "badges" : [
             {
-                "theme"     : "award",
+                "theme"     : "rank",
                 "name"      : "1st / 31 participants",
                 "link"      : "https://x.com/hashibakcompeng/status/1725820155543134664"
             }
@@ -200,7 +200,41 @@
                 "name"      : "F.SE"
             }
         ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :11,
+            "day"   :15
+        },
+        "title" : "Code D.A.R.K.: Biohacking Village CTF Challenge (in CODE BLUE 2024)",
+        "link"  : "https://www.villageb.io/codeblue2024",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "2nd / 10 teams"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "ONsen",
+                "link"      : "https://ctftime.org/team/220382"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :11,
+            "day"   :17
+        },
+        "title" : "Sendai CTF 2024",
+        "link"  : "https://www.sendai-ctf.org/event/ctf2024/",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "3rd / 38 participants"
+            }
+        ]
     }
-
 
 ]
