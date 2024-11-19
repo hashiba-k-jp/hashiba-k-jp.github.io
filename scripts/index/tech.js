@@ -11,6 +11,7 @@ fetch('./contents/tech.json')
     .then(response => response.json())
     .then(data => {
         const parent_div = document.getElementById("tech-events");
+        var i = 0;
         for (const element of data) {
             const newDiv = document.createElement("div");
             newDiv.classList.add("row", "mt-1", "border-orange");
@@ -43,67 +44,109 @@ fetch('./contents/tech.json')
             br.classList = ["d-md-none"];
             main.append(br);
 
-            for (badge of element.badges){
-                const newBadge = BADGE.cloneNode(true);
-                newBadge.querySelector("a").innerHTML = badge.name;
+            if("badges" in element){
+                for (badge of element.badges){
+                    const newBadge = BADGE.cloneNode(true);
+                    newBadge.querySelector("a").innerHTML = badge.name;
 
-                if(!(badge.link == "") && ("link" in badge)){
-                    newBadge.querySelector("a").href = badge.link;
-                }else{
-                    newBadge.querySelector("a").tabindex = -1;
-                }
+                    if(!(badge.link == "") && ("link" in badge)){
+                        newBadge.querySelector("a").href = badge.link;
+                    }else{
+                        newBadge.querySelector("a").tabindex = -1;
+                    }
 
-                if("remarks" in badge){
-                    if(badge.remarks.text.includes("strikethrough")){
-                        newBadge.querySelector("a").classList.add("text-decoration-line-through");
+                    if("remarks" in badge){
+                        if(badge.remarks.text.includes("strikethrough")){
+                            newBadge.querySelector("a").classList.add("text-decoration-line-through");
+                        }
+                    }
+
+                    switch(badge.theme){
+                        case "github":
+                            newBadge.classList.add("text-secondary-emphasis", "bg-secondary-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-github");
+                            main.append(newBadge);
+                            break;
+                        case "team":
+                            newBadge.classList.add("text-info-emphasis", "bg-info-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-people");
+                            main.append(newBadge);
+                            break;
+                        case "solo":
+                            newBadge.classList.add("text-info-emphasis", "bg-info-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-person");
+                            main.append(newBadge);
+                            break;
+                        case "rank":
+                            newBadge.classList.add("text-success-emphasis", "bg-success-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-bar-chart-line");
+                            main.append(newBadge);
+                            break;
+                        case "detail":
+                            newBadge.classList.add("text-secondary-emphasis", "bg-secondary-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-chevron-right");
+                            main.append(newBadge);
+                            break;
+                        case "ex-link":
+                            newBadge.classList.add("text-danger-emphasis", "bg-danger-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-link-45deg");
+                            main.append(newBadge);
+                            break;
+                        case "award":
+                            newBadge.classList.add("text-warning-emphasis", "bg-warning-subtle");
+                            newBadge.querySelector("i").classList.add("bi", "bi-award");
+                            main.append(newBadge);
+                            break;
+                        default:
+                            newBadge.classList.add("text-bg-light");
+                            main.append(newBadge);
+                            break;
                     }
                 }
-
-                switch(badge.theme){
-                    case "github":
-                        newBadge.classList.add("text-secondary-emphasis", "bg-secondary-subtle");
-                        newBadge.querySelector("i").classList.add("bi", "bi-github");
-                        main.append(newBadge);
-                        break;
-                    case "team":
-                        newBadge.classList.add("text-info-emphasis", "bg-info-subtle");
-                        newBadge.querySelector("i").classList.add("bi", "bi-people");
-                        main.append(newBadge);
-                        break;
-                    case "rank":
-                        newBadge.classList.add("text-success-emphasis", "bg-success-subtle");
-                        newBadge.querySelector("i").classList.add("bi", "bi-bar-chart-line");
-                        main.append(newBadge);
-                        break;
-                    case "detail":
-                        newBadge.classList.add("text-secondary-emphasis", "bg-secondary-subtle");
-                        newBadge.querySelector("i").classList.add("bi", "bi-chevron-right");
-                        main.append(newBadge);
-                        break;
-                    case "ex-link":
-                        newBadge.classList.add("text-danger-emphasis", "bg-danger-subtle");
-                        newBadge.querySelector("i").classList.add("bi", "bi-link-45deg");
-                        main.append(newBadge);
-                        break;
-                    case "award":
-                        newBadge.classList.add("text-warning-emphasis", "bg-warning-subtle");
-                        newBadge.querySelector("i").classList.add("bi", "bi-award");
-                        main.append(newBadge);
-                        break;
-                    default:
-                        newBadge.classList.add("text-bg-light");
-                        main.append(newBadge);
-                        break;
-                }
             }
+
+            if("accordion" in element){
+                const accordion = document.createElement("div");
+                accordion.classList.add("accordion");
+                accordion.id = "accordion_" + i;
+
+
+
+// <div class="accordion" id="accordionExample">
+//   <div class="accordion-item">
+//     <h2 class="accordion-header">
+//       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+//         Accordion Item #1
+//       </button>
+//     </h2>
+//     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+//       <div class="accordion-body">
+//         <strong>This is the first item's accordion body.</strong> overflow.
+//       </div>
+//     </div>
+//   </div>
+                var accordionI = 0;
+                for (item of element.accordion){
+                    const accordionItem = document.createElement("div");
+                    accordionItem.classList.add("accordion-item");
+
+                    const accordionContent = document.createElement("div");
+                    accordionContent.classList.add("accordion-collapse", "collapse");
+                    accordionContent.id = "accordion" + i + accordionI;
+
+                }
+                main.append(accordion);
+            }
+
+
 
 
             newDiv.append(date);
             newDiv.append(main);
 
-
             parent_div.append(newDiv);
 
+            i += 1;
         }
     })
     .catch(error => console.error('Failed to read json file:', error));
