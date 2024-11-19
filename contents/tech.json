@@ -104,6 +104,10 @@
                 "theme"     : "rank",
                 "name"      : "1st / 31 participants",
                 "link"      : "https://x.com/hashibakcompeng/status/1725820155543134664"
+            },
+            {
+                "theme"     : "solo",
+                "name"      : "ke-"
             }
         ]
     },
@@ -212,7 +216,8 @@
         "badges" : [
             {
                 "theme"     : "rank",
-                "name"      : "2nd / 10 teams"
+                "name"      : "2nd / 10 teams",
+                "link"      : "https://x.com/hashibakcompeng/status/1857358839689162784"
             },
             {
                 "theme"     : "team",
@@ -232,9 +237,20 @@
         "badges" : [
             {
                 "theme"     : "rank",
-                "name"      : "3rd / 38 participants"
+                "name"      : "3rd / 38 participants",
+                "link"      : "https://x.com/hashibakcompeng/status/1858134876731429252"
+            },
+            {
+                "theme"     : "solo",
+                "name"      : "ke-"
+            }
+        ],
+        "accordion" : [
+            {
+                "theme"     : "result",
+                "name"      : "result",
+                "href"      : "#PATH FOR IMAGE"
             }
         ]
     }
-
 ]
