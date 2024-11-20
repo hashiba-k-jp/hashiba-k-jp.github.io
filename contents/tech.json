@@ -224,7 +224,16 @@
                 "name"      : "ONsen",
                 "link"      : "https://ctftime.org/team/220382"
             }
+        ],
+        "collapse" : [
+            {
+                "type"      : "img",
+                "icon"      : "graph",
+                "name"      : "Score Graph",
+                "href"      : "/results/images/BHV24.png"
+            }
         ]
+
     },
     {
         "date"  : {
@@ -245,11 +254,12 @@
                 "name"      : "ke-"
             }
         ],
-        "accordion" : [
+        "collapse" : [
             {
-                "theme"     : "result",
-                "name"      : "result",
-                "href"      : "#PATH FOR IMAGE"
+                "type"      : "img",
+                "icon"      : "graph",
+                "name"      : "Score Graph",
+                "href"      : "/results/images/Sendai24.png"
             }
         ]
     }

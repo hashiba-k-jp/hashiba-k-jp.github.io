@@ -11,7 +11,7 @@ fetch('./contents/tech.json')
     .then(response => response.json())
     .then(data => {
         const parent_div = document.getElementById("tech-events");
-        var i = 0;
+        let numData = 0;
         for (const element of data) {
             const newDiv = document.createElement("div");
             newDiv.classList.add("row", "mt-1", "border-orange");
@@ -105,48 +105,59 @@ fetch('./contents/tech.json')
                 }
             }
 
-            if("accordion" in element){
-                const accordion = document.createElement("div");
-                accordion.classList.add("accordion");
-                accordion.id = "accordion_" + i;
+            if("collapse" in element){
+                const collapseArea = document.createElement("div");
+                collapseArea.classList.add("collapseArea", "container");
 
+                let numCollapse = 0;
+                for (item of element.collapse){
+                    const collapseId = "collapse_"+numData+"_"+numCollapse;
 
+                    const collapseButton = document.createElement("button");
+                    collapseButton.classList.add("badge", "me-1");
+                    collapseButton.classList.add("text-warning-emphasis", "bg-warning-subtle");
+                    collapseButton.classList.add("btn", "collapsed");
+                    collapseButton.type = "button";
+                    collapseButton.setAttribute("data-bs-toggle", "collapse");
+                    collapseButton.setAttribute("data-bs-target", "#collapse_"+numData+"_"+numCollapse);
+                    collapseButton.innerText = item.name;
 
-// <div class="accordion" id="accordionExample">
-//   <div class="accordion-item">
-//     <h2 class="accordion-header">
-//       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-//         Accordion Item #1
-//       </button>
-//     </h2>
-//     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-//       <div class="accordion-body">
-//         <strong>This is the first item's accordion body.</strong> overflow.
-//       </div>
-//     </div>
-//   </div>
-                var accordionI = 0;
-                for (item of element.accordion){
-                    const accordionItem = document.createElement("div");
-                    accordionItem.classList.add("accordion-item");
+                    const collapseButtonIcon = document.createElement("i");
+                    collapseButtonIcon.style.marginRight = "0.2em";
+                    switch (item.icon) {
+                        case "graph":
+                            collapseButtonIcon.classList = ("bi", "bi-graph-up");
+                            break;
+                        default:
+                            collapseButtonIcon.classList = ("bi", "bi-chevron-right");
+                    }
+                    collapseButton.prepend(collapseButtonIcon);
 
-                    const accordionContent = document.createElement("div");
-                    accordionContent.classList.add("accordion-collapse", "collapse");
-                    accordionContent.id = "accordion" + i + accordionI;
+                    main.append(collapseButton);
+                    numCollapse+=1;
+
+                    const collapseContent = document.createElement("div");
+                    collapseContent.classList.add("collapse", "card", "card-body", "mt-1", "col-xxl-6", "col-xl-8", "col-lg-8", "col-md-12", "col-sm-12", "col-xs-12");
+                    collapseContent.id = collapseId;
+                    collapseContent.setAttribute("style", "");
+
+                    const collapseImg = document.createElement("img");
+                    collapseImg.src = item.href;
+                    collapseImg.classList.add("img-fluid");
+
+                    collapseContent.append(collapseImg);
+                    collapseArea.append(collapseContent);
 
                 }
-                main.append(accordion);
+                main.append(collapseArea);
             }
-
-
-
 
             newDiv.append(date);
             newDiv.append(main);
 
             parent_div.append(newDiv);
 
-            i += 1;
+            numData += 1;
         }
     })
     .catch(error => console.error('Failed to read json file:', error));
