@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>CODE BLUE 2024 感想文 | Ke-</title>
+
+        <!-- bootstrap 5.0 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/styles/common.css" type="text/css">
+        <link rel="stylesheet" href="/styles/flags.css" type="text/css">
+
+        <style media="screen">
+            /* Show it is fixed to the top */
+            body {
+                min-height: 75rem;
+                padding-top: 4.5rem;
+            }
+
+            main, h3, h5, nav>div>div>a{
+                font-family: "Noto Sans JP", sans-serif !important;
+            }
+
+            h3{
+                background-image: linear-gradient(45deg, #fee140ff, #FF930080, #fa709a40, #FFFFFF00);
+            }
+
+            p{
+                text-indent: 1em;
+            }
+
+            li{
+                /* list-style:none; */
+                list-style-position: inside;
+
+            }
+
+            .badge{
+                text-decoration: none;
+                font-weight: 400; /*semi bold*/
+                margin: 0 .15em;
+            }
+
+            .badge  > a{
+                color: inherit;
+            }
+
+            .contents-title{
+                margin: 0;
+                font-weight: 600; /*semi bold*/
+            }
+
+            /* .row{
+                margin-top: 1em;
+                border-left: solid 1px;
+            } */
+
+        </style>
+
+        <script type="text/javascript" src="/scripts/common.js"></script>
+
+    </head>
+    <body>
+        <script>nav("CODE BLUE 2024 感想文")</script>
+
+        <main class="container">
+            <div class="container div-text">
+                <div class="container col-xxl-9 col-lg-10 col-12">
+                    <div class="row">
+                        <h3 class="p-1 px-3">はじめに</h3>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>whois</h6>
+                        <div class="col-12 col-lg-10 col-md-9">
+                            <p class="my-1">
+                                本稿の筆者は以下のようなバックグララウンドを有しています。
+                            </p>
+                            <ul class="">
+                                <li class="">近畿地方の修士1年</li>
+                                <li class="">セキュリティを学び始めて1年目</li>
+                                <li class="">SecHac 365, SecCamp, 未踏などは応募したことすらない</li>
+                                <li class="">CTFは2年前から嗜む程度</li>
+                            </ul>
+                        </div>
+                        <figure class="figure col-12 col-lg-2 col-md-3 d-none d-md-block">
+                            <img src="/images/icons/icon.jpg" class="figure-img img-fluid rounded rounded-circle border border-secondary" alt="" height="100%">
+                            <!-- <figcaption class="figure-caption text-end"></figcaption> -->
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>応募</h6>
+                        <p class="my-1">
+                            1500文字程度のお気持ち怪文書を書いた記憶があります。
+                            なお、セキュリティ技術や関連の経験は必須ではないようです。
+                            証左にSecCampに応募していない私でも採択されています。
+                        </p>
+                        <p class="my-1">
+                            参考に最終的な応募倍率として、今回は応募が100強で採用が45だったそうです。
+                            ただ学年を考慮したりと（最終年次の人を採りすぎると、その人たちは翌年参加できず運営に困るため）、完全にフラットな選考ではない気もします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr m-2"/>
+
+            <div class="container div-text">
+                <div class="container col-xxl-9 col-lg-10 col-12">
+                    <div class="row">
+                        <h3 class="p-1 px-3">0日目</h3>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>到着と準備</h6>
+                        <div class="col-12 col-xl-9 col-md-6">
+                            <p class="my-1">
+                                朝6時起床で朝9時ITM発、10時過ぎHND着の飛行機です。
+                            </p>
+                            <p class="my-1">
+                                なお募集要項では移動費は出ないかもとのことでしたが、実際には今年は出るようです（東京から遠い地域出身として、移動費自己負担の文字で応募を諦める人がいなかったことを祈るばかりです）。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-6">
+                            <img src="/results/images/cb24/hnd_d.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">羽田空港&mdash;D滑走路</figcaption>
+                        </figure>
+                        <figure class="figure col-12 col-xl-3 col-md-6">
+                            <img src="/results/images/cb24/name.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">名札と100円のステッカー</figcaption>
+                        </figure>
+                        <div class="col-12 col-xl-9 col-md-6">
+                            <p class="my-1">
+                                到着後は名札、Tシャツ（長袖半袖各2枚）、マニュアルを受け取ります。
+                                揃ったら全体的な説明があり、その後各々の分掌ごとに別れて説明があります。
+                            </p>
+                            <p class="my-1">
+                                私と他に3名の4名に割り当てられた分掌は講演者、査読者、実行委員会の来場を記録し、名札とTシャツを渡し、
+                                speaker attend（講演者を案内する人）に引き渡すだけのお仕事です。0日目は名札を確認しひたすら並べていました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <div class="col-12">
+                            <h6>スポンサーとの交流会</h6>
+                            <p class="my-1">
+                                その日の夕方には1時間程度スポンサーとのお話会のようなものがありました。この会では<a href="https://codeblue.jp/sponsors/">ここ</a>にあるSecond Sponsor以上の企業が多かった記憶があります。
+                            </p>
+                            <p class="my-1">
+                                この会の参加者はスポンサー企業と学生スタッフだけなので、企業の意図としては採用活動が大きいものと思います。
+                                就職したい企業を探しておくのも良かったかもしれません。
+                                この分野における各企業のプレゼンスやセキュリティに対する関心など、この業界の企業の俯瞰的な感覚を養うにも良い機会です。
+                                私は情報系企業には疎く、働くという意識も自覚も希薄なのであまりよく分かりませんでしたが、参加企業は覚えておこうと思います。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>散会後</h6>
+                        <div class="col-12 col-xl-6 col-md-6">
+                            <p class="my-1">
+                                東京圏以外から参加の民には会場近くに宿泊の手配があります。
+                                夜は参加者有志で夕食に行きました。15人程度でガストに押し寄せる様は部活や文化祭の打ち上げのようですが、いずれも参加したことがないので私の偏見です。
+                                翌朝は7時集合ということに留意しましょう。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/shinjuku.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">宿の部屋からは妖しく光る<br>ドコモタワーが見える</figcaption>
+                        </figure>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/gusto.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">夕食&mdash;最近のファミレス高くね？</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr m-2"/>
+
+            <div class="container">
+                <div class="container col-xxl-9 col-lg-10 col-12">
+                    <div class="row">
+                        <h3 class="p-1 px-3">1日目</h3>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>午前</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                受付時に確認すべき事項、渡すもの、その流れの確認を行います。
+                                基本的には流れ作業で特殊な問い合わせが来たら上級スタッフにエスカレートするだけです。
+                                登壇者の多くは本会1日目の午前に来場するため最初がピークです。ただ今年は比較的分散して来場していたようなので大惨事にはなりませんでした。
+                                それでも午前中に講演を聞きに行くほどの余裕はありません。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>午後</h6>
+                        <div class="col-12 col-xl-6 col-md-6">
+                            <p class="my-1">
+                                昼食にはお弁当が配給されます。4種から1種を早い者勝ちで選べるスタイルです。
+                            </p>
+                            <p class="my-1">
+                                ここで物販業務が追加され、Tシャツとステッカーの販売の補助をします。
+                                私がいる時間には2枚売れましたが、こちらもさほど忙しくはありません。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/lunch1.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">昼食&mdash;生姜焼きが人気</figcaption>
+                        </figure>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/ahiru.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">並べて遊んでいた</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>講演･CTF</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                午後も来場者は一定数いるもののピークは過ぎた頃合いですので、講演を聴きに行く余裕が生まれます。
+                                私は<a href="https://codeblue.jp/program/time-table/day1-008/">鉄道システムのセキュリティに関する講演</a>を聴きに行きました。
+                                実世界においてはパソコンカタカタだけではなく、物理的なセキュリティも重要です。
+                            </p>
+                        </div>
+                        <div class="col-12 col-xl-9 col-md-7">
+                            <p class="my-1">
+                                加えてCODE BLUEではCTFを併催しています。筆者は男性なのでKunoichi Cyber Gameの見学は憚られましたが、
+                                隣でBiohacking Village CTFという医療のサイバーセキュリティに関するCTFが開催されており、その場ではセキュリティ機器の実物展示などがありました。
+                                ここでCTFを見つけてしまったが故に、それからはCTFに没頭することになります。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-5">
+                            <img src="/results/images/cb24/ics.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">展示物&mdash;ICS関連だそう</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>散会後</h6>
+                        <div class="col-12 col-xl-9 col-md-7">
+                            <p class="my-1">
+                                前日同様17人程度で居酒屋に押し寄せました。にわかには信じがたい量のビールを飲んでいる人もいましたが翌日大丈夫だったのがすごいところです。
+                                なお未成年もその場にはいましたが未成年飲酒の強要やいわゆるアルハラ等は、私の知りうる限りなかったことに言及しておきます。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-5">
+                            <img src="/results/images/cb24/dinner2.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">夕食&mdash;バカ量の唐揚げを7人で</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr m-2"/>
+
+            <div class="container">
+                <div class="container col-xxl-9 col-lg-10 col-12">
+                    <div class="row">
+                        <h3 class="p-1 px-3">2日目</h3>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>午前</h6>
+                        <div class="col-12 col-xl-6 col-md-6">
+                            <p class="my-1">
+                                基本的には前日となすべきことは一緒です。大半の人が前日に来場しているので本会2日目はすることがあまりなく、講演聴講やCTFの余裕も多くなります。
+                                前日に楽天の企業ブースでいただいたパンダのぬいぐるみと会場内に多数生息するアヒルで<a href="https://x.com/hashibakcompeng/status/1857291804778823685">遊ぶほどの余裕</a>が生まれます。
+                            </p>
+                            <p class="my-1">
+                                また昨日同様昼食が配給されます。
+                            </p>
+                        </div>
+                        <!-- <div class="col-12 col-lg-3">
+                            <blockquote class="twitter-tweet" data-lang="ja" data-dnt="true" data-theme="white"><p lang="ja" dir="ltr">討伐 <a href="https://t.co/6MdGf93FdV">pic.twitter.com/6MdGf93FdV</a></p>&mdash; けー (@hashibakcompeng) <a href="https://twitter.com/hashibakcompeng/status/1857291804778823685?ref_src=twsrc%5Etfw">2024年11月15日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                        </div>
+                        </div> -->
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/panda.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">動物虐待</figcaption>
+                        </figure>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/lunch2.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">この日は洋風な感じ</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>講演</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                CODE BLUEでは公開NGの講演もいくつかあり、せっかくなのでそのような講演を聴きに行きました。
+                                いずれもあまり詳細は書かない方がいいかもしれませんが、<a href="https://codeblue.jp/program/time-table/day2-003/">この</a>講演では表題のとおり地球を離れ宇宙まで広がった内容です。
+                                もう一つ<a href="https://codeblue.jp/program/time-table/day2-004/">こちらの</a>講演ではセキュリティが社会･政治にも多大なる影響を及ぼしかねないことを考えさせられる内容でした。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>Biohacking Village CTF</h6>
+                        <div class="col-12 col-xl-9 col-md-7">
+                            <p class="my-1">
+                                昨日のCTFをひとりで黙々と解いており、2位や3位をうろつき始めました。
+                                偶然にも一般参加していた同じCTFチームの人と遭遇したので、後ほど参加していただくことになりました。
+                                13:00前後に2位まで追い上げましたが、1位チームの半分程度の点数といったところです。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-5">
+                            <img src="/results/images/cb24/bhv13.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">13:30時点&mdash;2位だがまだ大差</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>午後</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                2日目の午後ともなれば新しく来場する人も少なく、ただ黙って座って待っているのも虚無ですので、たまの来場者の対応をしつつCTFを黙々と解いていました。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-5">
+                            <img src="/results/images/cb24/bhv_discord.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">CTFも終盤</figcaption>
+                        </figure>
+                        <div class="col-12 col-xl-9 col-md-7">
+                            <p class="my-1">
+                                CTFから少し離れていた時、チームに「CTFの表彰対象になる可能性がある」との一報が入りました。
+                                先ほどまで1位だったチームを抜いて首位になっており、どうやらチームメンバーがありえない速度で追い上げしていたようです。
+                                CTFの終了は17時ですが、後始末等でこれ以上はCTFに参加できなかったため、1位の維持を祈りながら作業に取り掛かりました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>本会終了 - closing</h6>
+                        <div class="col-12 col-xl-6 col-md-6">
+                            <p class="my-1">
+                                会の最後にClosingがあります。
+                                CTFの結果発表もここで行われますが、結果は2位でした。1位のチームに最後の最後に追い上げられたようです。
+                                1位とはなりませんでしたが、許諾を得ず勝手にチーム名を使って始めてしまったCTFにもかかわらず一緒に参加していただき、チームの方々に感謝します。
+                            </p>
+                            <p class="my-1">
+                                あとで聞いた話ですが1位のチームは日本国内ランキングでも1位の強豪チームだったようです。
+                                言い訳がましくなりますが、弊チームも人数や時間を加味すると強豪チーム相手にかなり健闘したとは思います。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/bhv_result.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">弊チームはONsenです</figcaption>
+                        </figure>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/score.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">200点差</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>ネットワーキングパーティー</h6>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/dinner3.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">立食スタイル</figcaption>
+                        </figure>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/dinner4.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">酒類もあった</figcaption>
+                        </figure>
+                        <div class="col-12 col-xl-6 col-md-6">
+                            <p class="my-1">
+                                本会終了後はネットワーキングパーティーという交流会があります。ここはスポンサーや高い参加費を払った人とスタッフのみが参加できるものです。
+                            </p>
+                        </div>
+                        <div class="col-12 col-xl-9 col-md-9">
+                            <p class="my-1">
+                                私は空腹でご飯に集中しておりあまり人と話しませんでしたが、
+                                セキュリティ関連で働かれており以前別件でお会いした方や、CTFの1位のチームの方などにご挨拶できたり、また学生内でも談笑や研究について話したりすることができました。
+                            </p>
+                        </div>
+                        <figure class="figure col-12 col-xl-3 col-md-3">
+                            <img src="/results/images/cb24/stage.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">これは壇上からの眺め</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>散会後</h6>
+                        <figure class="figure col-12 col-xl-3 col-md-5">
+                            <img src="/results/images/cb24/kfc.jpg" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-end">KFC滅多に行くことなくない？</figcaption>
+                        </figure>
+                        <div class="col-12 col-xl-9 col-md-7">
+                            <p class="my-1">
+                                学生スタッフ含む多くの参加者はこの後開催されるGMOの2次会のような交流会に流れたそうですが、私は翌日5時起床で別のCTFに参加する予定があったので行きませんでした。
+                                その代わりに学生スタッフ3人でKFCに行き談笑してから帰路につきました。（宿は最終日終了分まで手配されています。）
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr m-2"/>
+
+            <div class="container div-text">
+                <div class="container col-xxl-9 col-lg-10 col-12">
+                    <div class="row">
+                        <h3 class="p-1 px-3">終わりに</h3>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>全体的な所感</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                学生スタッフとしての責務が生じるので会の全てにおいて講演を聞くことは当然できませんが、
+                                通常10万円程度する会に入れた経済的なメリットはある程度享受できたと思います。
+                            </p>
+                            <p class="my-1">
+                                セキュリティ分野で以前お会いした方も参加しており、この分野の狭さを認識しました。
+                                また東海以西からの参加者が半数程度を占めており、地域間での情報格差･機会の格差があるなかセキュリティ分野に関わる人は東京以外にも多いことを実感しました。
+                            </p>
+                            <p class="my-1">
+                                偏見ですが、学生が集まってわいわいしている様子にも近く、文化祭の準備のような楽しさもあったのかもしれません。
+                                私は文化祭を冷笑してすぐ帰るタイプだったのであまりよく分かりませんが。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>来年のTips</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                来年度参加を申し込む方/参加する方がもし見ているのであれば、微力でもお役に立てれば存外の喜びです。
+                            </p>
+                            <ul class="">
+                                <li>セキュリティ系に新しく入ってきた人間でも、選考次第では参加できる余地が十分にあります。</li>
+                                <li>0日目では荷物を置くスペースも十分にありました。指示がない限り、ロッカーなどに預ける必要はなさそうです。</li>
+                                <li>名刺はあると良いかもしれません。私は学生の名刺の意義に懐疑的ですが、それでも学生同士で覚えやすくなります。</li>
+                                <li>時間の余裕と業務次第ではCTFに参加できます。CTFerの方はパソコンを持っていくことを強くお勧めします。</li>
+                                <li>電源の数と場所が乏しいです。モバイルバッテリーがあれば安心です。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row border-start mt-2">
+                        <h6>Acknowledgement</h6>
+                        <div class="col-12">
+                            <p class="my-1">
+                                学生スタッフのみなさんや、特に同じ担当だった学生のKさん、Kさん、Tさん、またスタッフのNさんとSさんに感謝申し上げます。
+                                最後に写真を添えて終わります。
+                            </p>
+                        </div>
+                        <figure class="figure col-12">
+                            <img src="/results/images/cb24/codeblue.jpg" class="figure-img img-fluid rounded" alt="">
+                            <!-- <figcaption class="figure-caption text-end"></figcaption> -->
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-5">
+
+            </div>
+
+
+
+            <script type="text/javascript" src="/scripts/background.js"></script>
+        </main>
+    </body>
+</html>
