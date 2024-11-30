@@ -38,7 +38,7 @@
 // </div>
 function main(){
     const masterDiv = document.createElement("div");
-    masterDiv.classList.add("footer-image");
+    masterDiv.classList.add("footer-image", "d-none", "d-md-block");
     masterDiv.setAttribute("user-select", "none");
 
     //   <img src="images/layer2_white.svg" class="white_cover" id="layer_2"  alt="" width="1600" height="1600">
