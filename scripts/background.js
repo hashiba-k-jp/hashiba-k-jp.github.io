@@ -38,7 +38,8 @@
 // </div>
 function main(){
     const masterDiv = document.createElement("div");
-    masterDiv.classList.add("footer-image", "d-none", "d-lg-block");
+    masterDiv.classList.add("footer-image");
+    masterDiv.setAttribute("user-select", "none");
 
     //   <img src="images/layer2_white.svg" class="white_cover" id="layer_2"  alt="" width="1600" height="1600">
     masterDiv.append(createImg("/images/layer2_white.svg", ["white_cover"], "layer_2", 1600, 1600));
@@ -112,11 +113,10 @@ function main(){
     // <link rel="stylesheet" href="./styles/rotation.css" type="text/css">
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/styles/rotation.css';
+    link.href = '/styles/background.css';
     document.head.appendChild(link);
 
 }
-
 
 function createImg(src, classes, id, width, height){
     const img = document.createElement("img");

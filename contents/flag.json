@@ -1,0 +1,94 @@
+[
+    {
+        "p":[
+            {"color": "#373B66", "width":"26%"  },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#C3373F", "width":"3.2%" },
+            {"color": "#FFFFFF", "width":"3.2%" },
+            {"color": "#373B66", "width":"26%"  }
+        ],
+        "c":[
+            {"color": "#154D7B", "width":"17%"  },
+            {"color": "#FFFFFF", "width":"5%"   },
+            {"color": "#881F4E", "width":"7%"   },
+            {"color": "#FFFFFF", "width":"5%"   },
+            {"color": "#881F4E", "width":"7%"   },
+            {"color": "#FFFFFF", "width":"5%"   },
+            {"color": "#881F4E", "width":"2%"   },
+            {"color": "#FFFFFF", "width":"1%"   },
+            {"color": "#154D7B", "width":"2%"   },
+            {"color": "#FFFFFF", "width":"1%"   },
+            {"color": "#881F4E", "width":"2%"   },
+            {"color": "#FFFFFF", "width":"5%"   },
+            {"color": "#881F4E", "width":"7%"   },
+            {"color": "#FFFFFF", "width":"5%"   },
+            {"color": "#881F4E", "width":"7%"   },
+            {"color": "#FFFFFF", "width":"5%"   },
+            {"color": "#154D7B", "width":"17%"  }
+        ]
+    },
+    {
+        "p":[
+            {"color": "#02594A", "width":"26.5%" },
+            {"color": "#FFFFFF", "width":" 8.0%" },
+            {"color": "#02594A", "width":" 5.0%" },
+            {"color": "#FFFFFF", "width":" 8.0%" },
+            {"color": "#02594A", "width":" 5.0%" },
+            {"color": "#FFFFFF", "width":" 8.0%" },
+            {"color": "#02594A", "width":" 5.0%" },
+            {"color": "#FFFFFF", "width":" 8.0%" },
+            {"color": "#02594A", "width":"26.5%" }
+        ],
+        "c":[
+            {"color": "#2E0A70", "width":"26.0%" },
+            {"color": "#FFFFFF", "width":" 4.0%" },
+            {"color": "#2E0A70", "width":"12.0%" },
+            {"color": "#FFFFFF", "width":" 4.0%" },
+            {"color": "#2E0A70", "width":" 2.0%" },
+            {"color": "#FFFFFF", "width":" 4.0%" },
+            {"color": "#2E0A70", "width":" 2.0%" },
+            {"color": "#FFFFFF", "width":" 4.0%" },
+            {"color": "#2E0A70", "width":"12.0%" },
+            {"color": "#FFFFFF", "width":" 4.0%" },
+            {"color": "#2E0A70", "width":"26.0%" }
+        ]
+    },
+    {
+        "p":[
+            {"color": "#364C97", "width":"16.0%" },
+            {"color": "#FFFFFF", "width":" 5.5%" },
+            {"color": "#364C97", "width":" 5.0%" },
+            {"color": "#FFFFFF", "width":" 5.5%" },
+            {"color": "#364C97", "width":"10.0%" },
+            {"color": "#FFFFFF", "width":" 5.5%" },
+            {"color": "#364C97", "width":" 5.0%" },
+            {"color": "#FFFFFF", "width":" 5.5%" },
+            {"color": "#364C97", "width":"10.0%" },
+            {"color": "#FFFFFF", "width":" 5.5%" },
+            {"color": "#364C97", "width":" 5.0%" },
+            {"color": "#FFFFFF", "width":" 5.5%" },
+            {"color": "#364C97", "width":"16.0%" }
+        ],
+        "c":[
+            {"color": "#FFF9D8", "width":"23.0%" },
+            {"color": "#660000", "width":" 8.0%" },
+            {"color": "#FFF9D8", "width":"15.0%" },
+            {"color": "#660000", "width":" 8.0%" },
+            {"color": "#FFF9D8", "width":"15.0%" },
+            {"color": "#660000", "width":" 8.0%" },
+            {"color": "#FFF9D8", "width":"23.0%" }
+        ]
+    }
+]
