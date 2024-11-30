@@ -262,5 +262,36 @@
                 "href"      : "/results/images/Sendai24.png"
             }
         ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :11,
+            "day"   :30
+        },
+        "title" : "(Japan Gov't MIC) Nationwide CTF Contest",
+        "link"  : "https://www.soumu.go.jp/menu_news/s-news/01cyber01_02000001_00223.html",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "2nd (Osaka)"
+            },
+            {
+                "theme"     : "rank",
+                "name"      : "5th? (Overall)"
+            },
+            {
+                "theme"     : "solo",
+                "name"      : "ke-"
+            }
+        ],
+        "collapse" : [
+            {
+                "type"      : "img",
+                "icon"      : "graph",
+                "name"      : "Score Graph (On sites)",
+                "href"      : "/results/images/mic24.png"
+            }
+        ]
     }
 ]
