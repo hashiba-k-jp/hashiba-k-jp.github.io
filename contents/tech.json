@@ -293,5 +293,25 @@
                 "href"      : "/results/images/mic24.png"
             }
         ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :12,
+            "day"   :14
+        },
+        "title" : "TSG CTF 2024",
+        "link"  : "https://ctf.tsg.ne.jp/",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "45th"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "ONsen",
+                "link"      : "https://ctftime.org/team/220382"
+            }
+        ]
     }
 ]
