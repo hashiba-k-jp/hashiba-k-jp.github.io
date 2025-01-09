@@ -197,7 +197,7 @@
             "month" :10,
             "day"   :23
         },
-        "title" : "MWS Cup 2024 (in CSS 2024)",
+        "title" : "MWS Cup 2024",
         "badges" : [
             {
                 "theme"     : "team",
@@ -211,7 +211,7 @@
             "month" :11,
             "day"   :15
         },
-        "title" : "Code D.A.R.K.: Biohacking Village CTF Challenge (in CODE BLUE 2024)",
+        "title" : "Code D.A.R.K.: Biohacking Village CTF Challenge",
         "link"  : "https://www.villageb.io/codeblue2024",
         "badges" : [
             {
@@ -291,6 +291,25 @@
                 "icon"      : "graph",
                 "name"      : "Score Graph (On sites)",
                 "href"      : "/results/images/mic24.png"
+            }
+        ]
+    },
+    {
+        "date"  : {
+            "year"  :2024,
+            "month" :12,
+            "day"   :8
+        },
+        "title" : "ISUCON 14",
+        "link"  : "https://isucon.net/archives/58818382.html",
+        "badges" : [
+            {
+                "theme"     : "rank",
+                "name"      : "397th / 784 teams"
+            },
+            {
+                "theme"     : "team",
+                "name"      : "hakodate-a05"
             }
         ]
     },
